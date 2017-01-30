@@ -17,7 +17,10 @@
 }
 - (id)initWithModel:(NSString *)model {
     
-    _model = model;
+    if(self = [super init]) {
+        
+        _model = model;
+    }
     return self;
 }
 
